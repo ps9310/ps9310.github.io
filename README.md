@@ -1,4 +1,4 @@
-# Reflexis Task Manager apps [Flutter Version] : Beta
+# [Flutter] Task Manager apps : Beta
 
 https://ps9310.github.io/${APP_NAME} to access any of these apps.
   Ex: https://ps9310.github.io/MYWORK
