@@ -1,6 +1,4 @@
-# ps9310.github.io
-
-Flutter apps from Reflexis.
+# Flutter apps from Reflexis.
 
 https://ps9310.github.io/${APP_NAME} to access any of these apps.
   Ex: https://ps9310.github.io/MYWORK
