@@ -7722,7 +7722,7 @@ while(true)switch(s){case 0:if(a==="getTeamsToken")$.Mt().sm(0,b)
 else if(a==="getTeamsContext")$.Ms().sm(0,b)
 return A.a2(null,r)}})
 return A.a3($async$a8P,r)},
-aek(){self.nativeCommunication=A.a9(A.aoS())
+aek(){self.rflxMediator=A.a9(A.aoS())
 if($.C==null)A.alx()
 var s=$.C
 s.J1(B.Dg)
