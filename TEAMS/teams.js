@@ -1,27 +1,25 @@
 
 // Get a client side token from Teams
-async function getTeamsToken() {
-    console.log("getting TeamsToken")
+function getTeamsToken() {
+    console.log("getting TeamsToken");
     microsoftTeams.initialize();
-    return new Promise((resolve, reject) => {
-        microsoftTeams.authentication.getAuthToken({
-            successCallback: (result) => {
-                console.log("getting TeamsToken successCallback")
-                resolve(result);
-            },
-            failureCallback: (error) => { reject(error); }
-        });
+    microsoftTeams.authentication.getAuthToken({
+        successCallback: (result) => {
+            console.log("TeamsToken successCallback");
+            window.nativeCommunication('getTeamsToken', result);
+        },
+        failureCallback: (error) => {
+            window.nativeCommunication('getTeamsToken', null);
+        }
     });
 }
 
 // Get Teams context
-async function getTeamsContext() {
-    console.log("getting TeamsContext")
+function getTeamsContext() {
+    console.log("getting TeamsContext");
     microsoftTeams.initialize();
-    return new Promise((resolve, reject) => {
-        microsoftTeams.getContext((context) => {
-            console.log("getting TeamsToken successCallback")
-            resolve(JSON.stringify(context));
-        });
+    microsoftTeams.getContext((context) => {
+        console.log("TeamsContext successCallback");
+        window.nativeCommunication('getTeamsContext', JSON.stringify(context));
     });
 }
