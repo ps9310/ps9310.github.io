@@ -4,7 +4,10 @@ async function getTeamsToken() {
     microsoftTeams.initialize();
     return new Promise((resolve, reject) => {
         microsoftTeams.authentication.getAuthToken({
-            successCallback: (result) => { resolve(result); },
+            successCallback: (result) => {
+                alert(String(result));
+                resolve(result);
+            },
             failureCallback: (error) => { reject(error); }
         });
     });
@@ -15,6 +18,7 @@ async function getTeamsContext() {
     microsoftTeams.initialize();
     return new Promise((resolve, reject) => {
         microsoftTeams.getContext((context) => {
+            alert(String(context));
             resolve(context);
         });
     });
