@@ -6,10 +6,10 @@ function getTeamsToken() {
     microsoftTeams.authentication.getAuthToken({
         successCallback: (result) => {
             console.log("TeamsToken successCallback");
-            window.nativeCommunication('getTeamsToken', result);
+            window.rflxMediator('getTeamsToken', result);
         },
         failureCallback: (error) => {
-            window.nativeCommunication('getTeamsToken', null);
+            window.rflxMediator('getTeamsToken', null);
         }
     });
 }
@@ -20,6 +20,6 @@ function getTeamsContext() {
     microsoftTeams.initialize();
     microsoftTeams.getContext((context) => {
         console.log("TeamsContext successCallback");
-        window.nativeCommunication('getTeamsContext', JSON.stringify(context));
+        window.rflxMediator('getTeamsContext', JSON.stringify(context));
     });
 }
