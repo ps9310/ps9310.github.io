@@ -9,7 +9,7 @@ function getTeamsToken() {
             window.rflxMediator('getTeamsToken', result);
         },
         failureCallback: (error) => {
-            console.log("TeamsToken failureCallback");
+            console.log("TeamsToken failureCallback" + error);
             window.rflxMediator('getTeamsToken', null);
         }
     });
