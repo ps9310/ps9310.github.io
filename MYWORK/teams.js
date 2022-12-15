@@ -20,8 +20,8 @@ async function getTeamsContext() {
     console.log(`getting TeamsContext`);
     await microsoftTeams.initialize();
     microsoftTeams.getContext((context) => {
-        var json = JSON.stringify(context);
-        console.log(`TeamsContext successCallback ${json}`);
-        window.rflxMediator('getTeamsContext', json);
+        var tenantId = context.user.tenant.id;
+        console.log(`TeamsContext successCallback ${tenantId}`);
+        window.rflxMediator('getTeamsContext', tenantId);
     });
 }
