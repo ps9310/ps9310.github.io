@@ -1,8 +1,8 @@
 
 // Get a client side token from Teams
-function getTeamsToken() {
+async function getTeamsToken() {
     console.log("getting TeamsToken");
-    microsoftTeams.initialize();
+    await microsoftTeams.initialize();
     microsoftTeams.authentication.getAuthToken({
         successCallback: (result) => {
             console.log("TeamsToken successCallback");
@@ -16,9 +16,9 @@ function getTeamsToken() {
 }
 
 // Get Teams context
-function getTeamsContext() {
+async function getTeamsContext() {
     console.log("getting TeamsContext");
-    microsoftTeams.initialize();
+    await microsoftTeams.initialize();
     microsoftTeams.getContext((context) => {
         console.log("TeamsContext successCallback");
         window.rflxMediator('getTeamsContext', JSON.stringify(context));
