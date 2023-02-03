@@ -76338,7 +76338,7 @@ A.ag9.prototype={
 $2(a,b){return A.l9(new A.f_(new A.ag8(this.a,this.b,b),null),null,null)},
 $S:440}
 A.ag8.prototype={
-$1(a){var s=null,r=this.a,q=r.length,p=this.c.b,o=B.d.bD(p,360),n=p<=430?3.2222222222222223:4,m=!0
+$1(a){var s=null,r=this.a,q=r.length,p=this.c.b,o=Math.max(B.d.bD(p,430),1),n=p<=430?3.2222222222222223:4,m=!0
 m=m?B.mh:s
 return new A.qB(new A.aah(p/o,n),new A.rY(new A.ag7(r,this.b),q,!0,!0,!0,s),B.en,B.ap,!1,s,s,m,s,!1,s,0,s,q,B.as,B.li,s,B.N,s)},
 $S:441}
