@@ -1,14 +1,14 @@
 {
   "light": {
-    "primary": "#FFFFFF",
-    "primaryVariant": "#505AC9",
-    "secondary": "#505AC9",
-    "secondaryVariant": "#505AC9"
+    "primary": null,
+    "primaryVariant": null,
+    "secondary": null,
+    "secondaryVariant": null
   },
   "dark": {
-    "primary": "#FFFFFF",
-    "primaryVariant": "#505AC9",
-    "secondary": "#505AC9",
-    "secondaryVariant": "#505AC9"
+    "primary": null,
+    "primaryVariant": null,
+    "secondary": null,
+    "secondaryVariant": null
   }
 }
