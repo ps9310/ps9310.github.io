@@ -5953,7 +5953,6 @@ cross_file
 device_info
 flutter_lints
 flutter_plugin_android_lifecycle
-go_router
 image_picker_for_web
 image_picker_platform_interface
 local_auth
