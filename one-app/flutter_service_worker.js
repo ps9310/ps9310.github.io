@@ -14,7 +14,7 @@ const RESOURCES = {
 "splash/img/light-1x.png": "ff4712c7ccd39e7d75120d60aac06a38",
 "splash/splash.js": "123c400b58bea74c1305ca3ac966748d",
 "splash/style.css": "3e8699dd65a865ff991ec5b47a93643d",
-"index.html": "3f06f724e98f5dcae8bad86c5ca9d444",
+"index.html": "c13d927a274d3998bfa026f692295165",
 "/": "ad05061631025637ee5b1cb5f26cf4ca",
 "main.dart.js": "4de621caecbf80af254ca3b16346745f",
 "flutter.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
