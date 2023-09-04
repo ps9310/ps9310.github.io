@@ -80276,7 +80276,7 @@ A.o2.prototype={
 an(){return new A.PF(B.k)},
 Rz(){return this.d.$0()}}
 A.PF.prototype={
-K(a){var s,r,q=this,p=null,o=q.a.c,n=o.e==="ios",m=n?B.l:B.HC
+K(a){var s,r,q=this,p=null,o=q.a.c,n=o.e.toLowerCase()==="ios",m=n?B.l:B.HC
 m=A.XL(m,n?B.Da:B.Db,B.j,p)
 o=A.jb(o.f,p,p,p,A.X(a).p3.y,p,p)
 s=q.a.c
