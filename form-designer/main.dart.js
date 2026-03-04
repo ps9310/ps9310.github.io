@@ -150025,7 +150025,7 @@ $S:0}
 A.a5V.prototype={
 H(a){return new A.Tp(B.aG,B.dW,new A.aIl(),null)}}
 A.aIl.prototype={
-$4(a,b,c,d){return new A.z4(B.au5,"Form Designer Example",b,c,d,!1,null)},
+$4(a,b,c,d){return new A.z4(B.au5,"Form Designer",b,c,d,!1,null)},
 $C:"$4",
 $R:4,
 $S:924}
